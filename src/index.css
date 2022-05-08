@@ -7,7 +7,57 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.page-footer{
+  padding: 0;
+}
+
+.content{
+  min-height: calc(100vh - 64px - 50px);
+  padding: 50px 0;
+}
+
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.movie{
+  width: calc(100% / 3 - 20px);
+  margin: 20px 10px 0;
+}
+
+.movie img{
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.search .input-field{
+  margin: 0;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.search{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search-type{
+  width: 100%;
+  margin-top: 12px;
+}
+
+.search-type label{
+  margin-right: 30px;
+}
+
+.search-type [type="radio"]+span:before, .search-type [type="radio"]+span:after{
+  margin-left: 0;
+}
+.search-type [type="radio"]:not(:checked)+span, .search-type [type="radio"]:checked+span{
+  padding-left: 25px;
 }
