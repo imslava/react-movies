@@ -7,10 +7,12 @@ function Movie(props) {
     Poster: poster,
   } = props;
 
+  const isPoster = poster === 'N/A';
+
   return (
     <div id={id} className='card movie'>
       <div className='card-image'>
-        {poster === 'N/A' ? (
+        {isPoster ? (
           <img
             src={`https://via.placeholder.com/300x450?text=${title}`}
             alt={title}
